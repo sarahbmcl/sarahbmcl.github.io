@@ -1,41 +1,48 @@
 <!DOCTYPE html>
-   
+<html lang="en">
 <head>
-    <title>Mac's Portfolio</title>
-    <link rel="stylesheet" href="assets/css/style.css">
-</head> 
+    <title> 'Mac' Sarah McLaughlin </title>
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+</head>
+<body id="container">
+    <div id="content-wrap">
+        <header>
+            <section id="navbar" class="clearfix">
 
-<nav id="nav-master">
-    <div id="nav-name">
-            'Mac' Sarah McLaughlin
-    </div>
-    <div id="nav-links">
-        <a href="index.html">About</a> | <a href="portfolio.html">Portfolio</a> | <a href="contact.html">Contact</a>
-    </div>
-</nav>
+                <h1 id="name">'Mac' Sarah McLaughlin</h1>
 
-<body id="prism-backdrop"> 
-    <div id="container">
-        <h1>Contact</h1>
-        <form action="action_page.php">
-                <label for="name">Name</label>
-            </br>
-                <input type="text" id="name" name="name" placeholder="John Smith">
-            </br>
-                <label for="email">E-Mail</label>
-            </br>
-                <input type="text" id="email" name="email" placeholder="example@gmail.com">
-            </br>
-                <label for="subject">Message</label>
-            </br>
-                <textarea id="subject" name="subject" style="height:200px"></textarea>
-            </br>
-                <input type="submit" value="Submit">
-            </br>
-        </form>
+                <nav>
+                    
+                    <a class="link" href="index.html">About</a> |
+                    <a class="link" href="portfolio.html">Portfolio</a> |
+                    <a class="link" href="contact.html">Contact</a>
+
+                </nav>
+
+            </section>
+        </header>
+        
+        <main class="clearfix">
+            <section id="contactline">
+                <h1 id="about">Contact</h1>
+            </section>
+
+            <form action="mailto:sarahbmcl@gmail.com" method="post" enctype="text/plain">
+            <p id="contactwords">Name</p>
+            <input id="input" type="text" name="name" placeholder="John Smith">
+            <p id="contactwords">Email</p>
+            <input id="input" type="text" name="email" placeholder="example@gmail.com">
+            <p id="contactwords">Message</p>
+            <textarea id="messageinput" name="message" type="text"></textarea><br>
+            <input type="submit" value="Submit"></form>
+        </main>
+
     </div>
+    
+    <footer>
+        <p id="copyright">copyright ©</p>
+    </footer>
+
 </body>
 
-<footer id="footer">
-    <p id="footer-small">Copyright (C) </p>   
-</footer>
+</html>
