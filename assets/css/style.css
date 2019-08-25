@@ -75,9 +75,14 @@ nav {
 /* LINK BUTTON STYLE */
 
 a:link,
-a:visited {
+
+link:visited {
 	color: #777777;
 	text-decoration: none;
+}
+
+a.page-link:visited {
+	color:white;
 }
 
 a:hover {
@@ -99,6 +104,7 @@ a:active {
 	clear: both;
 	display: block;
 }
+
 
 
 /* INDEX PAGE STYLE */
@@ -289,3 +295,8 @@ footer {
 .container2 .btn:active {
 	background: #8fded9;
 }
+/* 
+.container2 .btn:visited{
+	color: white;
+} */
+
