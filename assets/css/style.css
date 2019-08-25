@@ -81,10 +81,6 @@ link:visited {
 	text-decoration: none;
 }
 
-a.page-link:visited {
-	color:white;
-}
-
 a:hover {
 	color: #4faaa5;
 	text-decoration: none;
@@ -295,8 +291,5 @@ footer {
 .container2 .btn:active {
 	background: #8fded9;
 }
-/* 
-.container2 .btn:visited{
-	color: white;
-} */
+
 
