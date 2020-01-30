@@ -1,4 +1,22 @@
-<!DOCTYPE html>
+<?php
+
+if($_POST["submit"]) {
+    $recipient="sarahbmcl@gmail.com";
+    $subject="Website Contact Request";
+    $sender=$_POST["sender"];
+    $senderEmail=$_POST["senderEmail"];
+    $senderEmail=$_POST["senderPhone"];
+    $message=$_POST["message"];
+
+    $mailBody="Name: $sender\nEmail: $senderEmail\nPhone: $senderPhone\n\n$message";
+
+    mail($recipient, $subject, $mailBody, "From: $sender <$senderEmail>");
+
+    $thankYou="<p>Thank you! Your message has been sent.</p>";
+}
+
+?>
+
 <html lang="en">
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
@@ -14,7 +32,7 @@
 <body>
   <nav role="navigation">
     <div class="nav-wrapper container">
-      <a id="logo-container" href="index.html" class="hide-on-med-and-down"><img src="public/assets/images/succulents/94-943988_watercolor-stereo-succulent-cartoon-transparent-watercolor-succulent-transparent.png"></a>
+      <a id="logo-container" href="index.html" class="brand-logo">Sarah McLaughlin</a>
       <ul id="nav-full" class="right hide-on-med-and-down">
         <li><a href="portfolio.html">Portfolio</a></li>
         <li><a href="contact.html">Contact</a></li>
@@ -40,43 +58,42 @@
         <br><br>
       </div>
     </div>
-    <div class="parallax"><img src="public/assets/images/succulents/SpKe2A.jpg"></div>
+    <div class="parallax"><img src="public/assets/images/testimage6.jpg"></div>
   </div>
 
   <div class="container" id="contact-form">
+
+    <?=$thankYou ?>
+
     <div class="row">
-      <form class="col s12">
+      <form method="post" action="contact.php" class="col s12">
         <div class="row">
           <div class="input-field col s6">
-              <input id="first" type="text" class="validate">
-              <label for="first_name">First Name</label>
-          </div>
-          <div class="input-field col s6">
-            <input id="last_name" type="text" class="validate">
-            <label for="last_name">Last Name</label>
+              <input id="name" name="sender" type="text" class="validate">
+              <label for="name">Full Name</label>
           </div>
         </div>
         <div class="row">
             <div class="input-field col s12">
               <textarea id="textarea1" class="materialize-textarea"></textarea>
-              <label for="textarea1">Your Message Here</label>
+              <label for="textarea1" name="message">Your Message Here</label>
             </div>
           </div>
         <div class="row">
           <div class="input-field col s12">
-            <input id="email" type="email" class="validate">
+            <input id="email" name="senderEmail" type="email" class="validate">
             <label for="email">Email</label>
           </div>
         </div>
         <div class="row">
           <div class="input-field col s12">
-            <input id="phone" type="email" class="validate">
+            <input id="phone" name="senderPhone" type="phone" class="validate">
             <label for="phone">Phone</label>
           </div>
         </div>
         <div class="row center">
           <div>
-            <button class="btn btn-lg center">Submit</button>
+            <input button class="btn btn-lg center" type="submit" name="submit">Submit</button>
           </div>
         </div>
       </form>
@@ -88,7 +105,7 @@
     <div class="row">
       <div class="col s12 m4">
         <div class="icon-block">
-          <h2 class="center"><img src="public/assets/images/contact3.png"></img></h2>
+          <h2 class="center"><img src="public/assets/images/linkedin-box (2).png"></img></h2>
           <h5 class="center" style="color: #595959"><a href="https://www.linkedin.com/in/sarahbmcl/">LinkedIn</a></h5>
           <!-- <p class="light">empty</p> -->
         </div>
@@ -96,7 +113,7 @@
 
       <div class="col s12 m4">
         <div class="icon-block">
-              <h2 class="center"><img src="public/assets/images/contact2.png"></img></h2>
+              <h2 class="center"><img src="public/assets/images/github-box 2.png"></img></h2>
               <h5 class="center" style="color: #595959"><a href="https://www.github.com/sarahbmcl/">GitHub</a></h5>
               <!-- <p class="light">empty</p> -->
         </div>
@@ -104,7 +121,7 @@
 
       <div class="col s12 m4">
         <div class="icon-block">
-              <h2 class="center"><img src="public/assets/images/contact1.png"></img></h2>
+              <h2 class="center"><img src="public/assets/images/account-box.png"></img></h2>
               <h5 class="center" style="color: #595959"><a href="mailto:sarahbmcl@gmail.com">Direct Contact</a></h5>
           <!-- <p class="light">empty</p> -->
         </div>

@@ -1,79 +1,274 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title> 'Mac' Sarah McLaughlin </title>
-    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
-    <style>
-        a.page-link:visited {
-          color: white;
-        }
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>'Mac' Sarah McLaughlin</title>
 
-        a.link:visited{
-            color: #777777;
-        }
-    </style>
+  <!-- CSS  -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="public/assets/css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link href="public/assets/css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
 </head>
-<body id="container">
-    <div id="content-wrap">
-        <header>
-            <section id="navbar" class="clearfix">
 
-                <h1 id="name">'Mac' Sarah McLaughlin</h1>
+<body>
+  <nav role="navigation">
+    <div class="nav-wrapper container">
+      <a id="logo-container" href="index.html" class="hide-on-med-and-down"><img src="public/assets/images/succulents/94-943988_watercolor-stereo-succulent-cartoon-transparent-watercolor-succulent-transparent.png"></a>
+      <ul class="right hide-on-med-and-down">
+        <li><a href="portfolio.html">Portfolio</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
 
-                <nav>
-                    
-                    <a class="link" href="index.html">About</a> |
-                    <a class="link" href="portfolio.html">Portfolio</a> |
-                    <a class="link" href="contact.html">Contact</a>
+      <ul id="nav-mobile" class="sidenav">
+        <li><a href="portfolio.html">Portfolio</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      
+      <a href="#" data-target="nav-mobile" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+    </div>
+  </nav>
 
-                </nav>
+  <div id="index-banner" class="parallax-container">
+    <div class="section no-pad-bot">
+      <div class="container">
+        <h1 class="header center">Portfolio</h1>
+      </div>
+      <div class="row center">
+        <h4 class="header col s12 light">Click a title for a brief overview of that project</h4>
+        <h4 class="header col s12 light">Or click the links to see the live project an repository.</h4></h4>
+      </div>
+    </div>
+    <div class="parallax"><img src="public/assets/images/succulents/91wfFPUa53L._AC_SL1500_.jpg"></div>
+  </div>
 
-            </section>
-        </header>
 
-        <main class="clearfix">
+  <div class="container">
+    <!-- <div class="section"> -->
+      <div class="row">
+        <div class="col m4">
+          <div class="card center">
+            <div class="card-image waves-effect waves-block waves-light center">
+              <img class="activator center" src="public/assets/images/project_1.jpg">
+            </div>
+            <div class="card-content">
+              <span class="card-title activator grey-text text-darken-4">What's Cookin'</span>
+              <p><a href="https://github.com/sarahbmcl/whatsCookin" style="color: #595959">View this Repository</a></p>
+              <p><a href="https://peaceful-taiga-82323.herokuapp.com/" style="color: #595959">See it in Action</a></p>
+            </div>
+            <div class="card-reveal">
+              <span class="card-title grey-text text-darken-4">What's Cookin'</span>
+              <p>Using Express Web Server, MySql Data Base, ORM, Retrieve (GET), Add data (POST), Materialize, Frontend UI, and MVC structure</p>
+            </div>
+          </div>
+        </div>
 
-            <section id="contactline">
-                <h1 id="about">Portfolio</h1>
-            </section>
+        <div class="col m4">
+            <div class="card center">
+              <div class="card-image waves-effect waves-block waves-light center">
+                <img class="activator center" src="public/assets/images/project_2.png">
+              </div>
+              <div class="card-content">
+                <span class="card-title activator grey-text text-darken-4">Bits & Giggles</span>
+                <p><a href="https://github.com/sarahbmcl/bits-and-giggles" style="color: #595959">View this Repository</a></p>
+                <p><a href="https://frozen-reef-89523.herokuapp.com/" style="color: #595959">See it in Action</a></p>
+              </div>
+              <div class="card-reveal">
+                <span class="card-title grey-text text-darken-4">Bits & Giggles</span>
+                <p>Using Express Web Server, MongoDB, Handlebars, React, Retrieve (GET), Add data (POST), Frontend UI, Heroku, Materialize, and Flash</p>
+              </div>
+            </div>
+        </div>
 
-            <div class="column">
-                <div class="row">
-                    <div class="container2">
-                    <img class="portimage spacer" src="assets/images/crystal.png" alt="crystal-collector">
-                    <button class="btn"><a class="page-link" href="https://sarahbmcl.github.io/unit-4-game/">Crystal Collector</a></button>
-                    </div>
+        <div class="col m4">
+          <div class="card center">
+              <div class="card-image waves-effect waves-block waves-light center">
+                <img class="activator center" src="public/assets/images/project_01.jpg">
+              </div>
+              <div class="card-content">
+                <span class="card-title activator grey-text text-darken-4">Cap City Karaoke</span>
+                <p><a href="https://github.com/sarahbmcl/CapCityKaraoke" style="color: #595959">View this Repository</a></p>
+                <p><a href="https://sarahbmcl.github.io/CapCityKaraoke/" style="color: #595959">See it in Action</a></p>
+              </div>
+              <div class="card-reveal">
+                <span class="card-title grey-text text-darken-4">Cap City Karaoke</span>
+                <p>Using HTML, Materialize, Javascript, TomTom Maps API, Twitter API, Lyric Genius API, and Firebase storage</p>
+              </div>
+          </div>
+        </div>
+      </div>
 
-                    <div class="container2">
-                    <img class="portimage spacer" src="assets/images/disney.png" alt="trivia-game">
-                    <button class="btn"><a class="page-link" href="https://sarahbmcl.github.io/TriviaGame/">Disney Trivia</a></button>
-                    </div>
-                
-                    <div class="container2">
-                    <img class="portimage spacer" src="assets/images/giphy.png" alt="giphy-api">
-                    <button class="btn"><a class="page-link" href="https://sarahbmcl.github.io/how-are-you-feeling-giphy/">Giphy API</a></button>
-                    </div>
+      <div class="row">
+        <div class="col m4">
+            <div class="card center">
+              <div class="card-image waves-effect waves-block waves-light center">
+                <img class="activator center" src="public/assets/images/clicky_game.jpg">
+              </div>
+              <div class="card-content">
+                <span class="card-title activator grey-text text-darken-4">Clicky Game</span>
+                <p><a href="https://github.com/sarahbmcl/ClickyGame" style="color: #595959">View this Repository</a></p>
+                <p><a href="https://immense-caverns-27456.herokuapp.com/" style="color: #595959">See it in Action</a></p>
+              </div>
+              <div class="card-reveal">
+                <span class="card-title grey-text text-darken-4">Clicky Game</span>
+                <p>Using CSS, HTML, JavaScript, Node, React, and react-dom</p>
+              </div>
+            </div>
+        </div>  
 
-                    <div class="container2">
-                    <img class="portimage spacer" src="assets/images/train.jpg" alt="train-times">
-                    <button class="btn"><a class="page-link" href="https://sarahbmcl.github.io/TrainTimes/">Train Times</a></button>
-                    </div>
+        <div class="col m4">
+            <div class="card center">
+              <div class="card-image waves-effect waves-block waves-light center">
+                <img class="activator center" src="public/assets/images/bamazon.jpg">
+              </div>
+              <div class="card-content">
+                <span class="card-title activator grey-text text-darken-4">Bamazon</span>
+                <p><a href="https://github.com/sarahbmcl/bamazon" style="color: #595959">View this Repository</a></p>
+                <p><a href=# style="color: #595959">See it in Action</a></p>
+              </div>
+              <div class="card-reveal">
+                <span class="card-title grey-text text-darken-4">Bamazon</span>
+                <p>Using MySQL and Node</p>
+              </div>
+            </div>
+        </div>  
 
-                    <div class="container2">
-                    <img class="portimage spacer" src="assets/images/whats_cookin.png" alt="whats-cookin">
-                    <button class="btn"><a class="page-link" href="https://peaceful-taiga-82323.herokuapp.com">What's Cookin'</a></button>
-                    </div>
+        <div class="col m4">
+            <div class="card center">
+              <div class="card-image waves-effect waves-block waves-light center">
+                <img class="activator center" src="public/assets/images/friend_finder.png">
+              </div>
+              <div class="card-content">
+                <span class="card-title activator grey-text text-darken-4">Friend Finder</span>
+                <p><a href="https://github.com/sarahbmcl/FriendFinder" style="color: #595959">View this Repository</a></p>
+                <p><a href="https://limitless-waters-92102.herokuapp.com/" style="color: #595959">See it in Action</a></p>
+              </div>
+              <div class="card-reveal">
+                <span class="card-title grey-text text-darken-4">Friend Finder</span>
+                <p>Using CSS, Express Web Server, Javascript, and Node</p>
+              </div>
+            </div>
+        </div>  
+
+      </div>
+
+      <div class="row">
+        <div class="col m4">
+            <div class="card center">
+              <div class="card-image waves-effect waves-block waves-light center">
+                <img class="activator center" src="public/assets/images/books_search.jpg">
+              </div>
+              <div class="card-content">
+                <span class="card-title activator grey-text text-darken-4">Google Books Search</span></span>
+                <p><a href="https://github.com/sarahbmcl/GoogleBooksSearch" style="color: #595959">View this Repository</a></p>
+                <p><a href="https://drive.google.com/file/d/1cLnbE6P2k27U-kK4O15NtvzQvMpgfYKx/view" style="color: #595959">See it in Action</a></p>
+              </div>
+              <div class="card-reveal">
+                <span class="card-title grey-text text-darken-4">Google Books Search</span>
+                <p>Using Axios, CSS, Express, Node, JavaScript, MongoBD, Mongoose, Morgan, Path, React, and react-router-dom</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col m4">
+              <div class="card center">
+                <div class="card-image waves-effect waves-block waves-light center">
+                  <img class="activator center" src="public/assets/images/train.jpg">
+                </div>
+                <div class="card-content">
+                  <span class="card-title activator grey-text text-darken-4">Train Times</span>
+                  <p><a href="https://github.com/sarahbmcl/TrainTimes" style="color: #595959">View this Repository</a></p>
+                  <p><a href="#####" style="color: #595959">See it in Action</a></p>
+                </div>
+                <div class="card-reveal">
+                  <span class="card-title grey-text text-darken-4">Train Times</span>
+                  <p>Using Javascript, Moment.js, JQuery, and Firebase</p>
+                </div>
+              </div>
+          </div>
+  
+          <div class="col m4">
+            <div class="card center">
+                <div class="card-image waves-effect waves-block waves-light center">
+                  <img class="activator center" src="public/assets/images/scraper.jpg">
+                </div>
+                <div class="card-content">
+                  <span class="card-title activator grey-text text-darken-4">News Scraper</span>
+                  <p><a href="https://github.com/sarahbmcl/NYT_Scraper" style="color: #595959">View this Repository</a></p>
+                  <p><a href="https://drive.google.com/file/d/1E9KEJoyCsUXMywNRwESuGrkBpgo684Ye/view" style="color: #595959">See it in Action</a></p>
+                </div>
+                <div class="card-reveal">
+                  <span class="card-title grey-text text-darken-4">News Scraper</span>
+                  <p>Using Axios, BodyParser, Cheerio, CSS, Express Web Server, Express Handlebars, JavaScript, MongoDB, Mongoose, and Node</p>
                 </div>
             </div>
-            
-        </main>
+          </div>
+      </div>
 
-    </div>
-    
-    <footer>
-        <p id="copyright">copyright ©</p>
-    </footer>
+      <div class="row">
+        <div class="col m4">
+            <div class="card center">
+              <div class="card-image waves-effect waves-block waves-light center">
+                <img class="activator center" src="public/assets/images/giphy_api.jpg">
+              </div>
+              <div class="card-content">
+                <span class="card-title activator grey-text text-darken-4">Giphy API</span>
+                <p><a href="https://github.com/sarahbmcl/how-are-you-feeling-giphy" style="color: #595959">View this Repository</a></p>
+                <p><a href="https://sarahbmcl.github.io/how-are-you-feeling-giphy/" style="color: #595959">See it in Action</a></p>
+              </div>
+              <div class="card-reveal">
+                <span class="card-title grey-text text-darken-4">Giphy API</span>
+                <p>Using HTML, Bootstrap, CSS, Javascript, and JQuery</p>
+              </div>
+            </div>
+        </div>
 
-</body>
+        <div class="col m4">
+          <div class="card center">
+              <div class="card-image waves-effect waves-block waves-light center">
+                <img class="activator center" src="public/assets/images/crystal_collector.jpg">
+              </div>
+              <div class="card-content">
+                <span class="card-title activator grey-text text-darken-4">Crystal Collector</span>
+                <p><a href="https://github.com/sarahbmcl/unit-4-game" style="color: #595959">View this Repository</a></p>
+                <p><a href="https://sarahbmcl.github.io/unit-4-game/" style="color: #595959">See it in Action</a></p>
+              </div>
+              <div class="card-reveal">
+                <span class="card-title grey-text text-darken-4" >Crystal Collector</span>
+                <p>Using HTML, Bootstrap, CSS, Javascript, and GIPHY API</p>
+              </div>
+          </div>
+        </div>
 
+        <div class="col m4">
+          <div class="card center">
+            <div class="card-image waves-effect waves-block waves-light center">
+              <img class="activator center" src="public/assets/images/trivia.jpg">
+            </div>
+            <div class="card-content">
+              <span class="card-title activator grey-text text-darken-4">Trivia Game</span>
+              <p><a href="https://github.com/sarahbmcl/TriviaGame" style="color: #595959">View this Repository</a></p>
+              <p><a href="https://sarahbmcl.github.io/TriviaGame/" style="color: #595959">See it in Action</a></p>
+            </div>
+            <div class="card-reveal">
+              <span class="card-title grey-text text-darken-4">Trivia Game</span>
+              <p>Using CSS, JQuery, and JavaScript</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    <!-- </div> -->
+  </div>
+
+  <footer class="page-footer">
+      <br>
+  </footer>
+
+  <!--  Scripts-->
+  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script src="js/materialize.js"></script>
+  <script src="js/init.js"></script>
+
+  </body>
 </html>

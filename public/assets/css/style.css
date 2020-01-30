@@ -1,0 +1,151 @@
+/* Custom Stylesheet */
+/**
+ * Use this file to override Materialize files so you can update
+ * the core Materialize files in the future
+ *
+ * Made By MaterializeCSS.com
+ */
+
+nav ul a {
+  color: #595959;
+  background-color: #fff;
+}
+
+#nav-mobile {
+  color: #595959;
+  /* color: #32936f; */
+  background-color: #fff;
+}
+
+#nav-full {
+  color: #595959;
+  background-color: #ffffff;
+}
+
+nav .brand-logo {
+  color: #595959;
+  background-color: #ffffff;
+}
+
+p {
+  line-height: 2rem;
+}
+
+.sidenav-trigger {
+  color: #32936f;
+}
+
+.parallax-container {
+  min-height: 380px;
+  line-height: 0;
+  height: auto;
+  color: rgb(255, 255, 255);
+}
+  .parallax-container .section {
+    width: 100%;
+  }
+
+@media only screen and (max-width : 992px) {
+  .parallax-container .section {
+    position: absolute;
+    top: 40%;
+  }
+  #index-banner .section {
+    top: 10%;
+  }
+}  
+
+@media only screen and (max-width : 600px) {
+  #index-banner .section {
+    top: 0;
+  }
+}
+
+.icon-block {
+  padding: 0 15px;
+}
+.icon-block .material-icons {
+  font-size: inherit;
+}
+
+footer.page-footer {
+  margin: 0;
+  background-color:#cfd11a;
+}
+footer.page-footer-2 {
+  margin: 0;
+  background-color:#8cd214;
+}
+
+.card-image {
+  max-width: 200px;
+  margin: auto;
+  padding-top: 10px;
+}
+ 
+.card {
+  min-width: 300px;
+  width: auto;
+}
+/* 
+a {
+  color: #32936f;
+} */
+
+#page1_blank {
+  background-color: #ffffff;
+}
+
+h1 {
+  /* color: #ffbf00;  */
+  /* color: #cfd11a;  */
+  font-size: 80px;
+  text-shadow: 3px 3px 3px #59595984;
+} 
+
+h2 {
+  color: #cfd11a;
+}
+
+h3 {
+  text-shadow: 3px 3px 3px #59595984;
+}
+
+h4 {
+  color: #fff;
+  text-shadow: 3px 3px 3px #59595984;
+}
+
+h5 {
+  color: #595959
+}
+
+p {
+  color: #595959;
+}
+
+#index-title {
+  color: #595959;
+  text-shadow: none;
+}
+
+#contact-form {
+  padding-top: 40px;
+}
+
+#portfolio-index {
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+  border-radius: 5%;
+  padding: 10px;
+}
+
+#main-photo-area {
+  margin-top: 20px;
+}
+
+#nav-img {
+  margin-top: 10px;
+  margin-left: 10px;
+}
