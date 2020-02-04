@@ -49,39 +49,29 @@
 
   <div class="container" id="contact-form">
     <div class="row">
-      <form class="col s12">
+      <form class="col s12" method="POST" name="contactform" action="contact-form-handler.php">
         <div class="row">
-          <div class="input-field col s6">
-              <input id="first" type="text" class="validate">
-              <label for="first_name">First Name</label>
-          </div>
-          <div class="input-field col s6">
-            <input id="last_name" type="text" class="validate">
-            <label for="last_name">Last Name</label>
+          <div class="input-field col s12">
+              <input id="name" type="text" class="validate">
+              <label for="name">Full Name</label>
           </div>
         </div>
         <div class="row">
             <div class="input-field col s12">
-              <textarea id="textarea1" class="materialize-textarea"></textarea>
-              <label for="textarea1">Your Message Here</label>
+              <input id="email" type="email" class="validate">
+              <label for="email">Email</label>
+            </div>
+        </div>
+        <div class="row">
+            <div class="input-field col s12">
+              <textarea id="message" class="materialize-textarea"></textarea>
+              <label for="message">Your Message Here</label>
             </div>
           </div>
-        <div class="row">
-          <div class="input-field col s12">
-            <input id="email" type="email" class="validate">
-            <label for="email">Email</label>
-          </div>
-        </div>
-        <div class="row">
-          <div class="input-field col s12">
-            <input id="phone" type="email" class="validate">
-            <label for="phone">Phone</label>
-          </div>
-        </div>
         <div class="row center">
           <div>
-            <button class="btn btn-lg center">Submit</button>
-          </div>
+            <button class="btn btn-lg center" value="submit" type="submit"> Submit</button>
+          </div> 
         </div>
       </form>
     </div>      
@@ -116,16 +106,6 @@
     </div>
   </div>
 
-  <!-- <div class="parallax-container valign-wrapper">
-    <div class="section no-pad-bot">
-      <div class="container">
-        <div class="row center">
-          <h3 class="header col s12 light">“Talent is a pursued interest. Anything that you're willing to practice, you can do.”<h3>
-        </div>
-      </div>
-    </div>
-    <div class="parallax"><img src="public/assets/images/testimage5.jpg" alt="Unsplashed background img 2"></div>
-  </div> -->
 
   <footer class="page-footer">
     <br>
@@ -135,6 +115,13 @@
   <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
   <script src="js/materialize.js"></script>
   <script src="js/init.js"></script>
+  <script language="JavaScript">
+      var frmvalidator  = new Validator("contactform");
+      frmvalidator.addValidation("name","req","Please provide your name");
+      frmvalidator.addValidation("email","req","Please provide your email");
+      frmvalidator.addValidation("email","email",
+      "Please enter a valid email address");
+  </script>
 
   </body>
 </html>
