@@ -46,60 +46,33 @@
     </div>
     <div class="parallax"><img src="public/assets/images/succulents/SpKe2A.jpg"></div>
   </div>
-
-  <div class="container" id="contact-form">
-    <div class="row">
-      <form class="col s12" method="POST" name="contactform" action="contact-form-handler.php">
-        <div class="row">
-          <div class="input-field col s12">
-              <input id="name" type="text" class="validate">
-              <label for="name">Full Name</label>
-          </div>
-        </div>
-        <div class="row">
-            <div class="input-field col s12">
-              <input id="email" type="email" class="validate">
-              <label for="email">Email</label>
-            </div>
-        </div>
-        <div class="row">
-            <div class="input-field col s12">
-              <textarea id="message" class="materialize-textarea"></textarea>
-              <label for="message">Your Message Here</label>
-            </div>
-          </div>
-        <div class="row center">
-          <div>
-            <button class="btn btn-lg center" value="submit" type="submit"> Submit</button>
-          </div> 
-        </div>
-      </form>
-    </div>      
-  </div>
   
   <div class="container">
     <!--   Icon Section   -->
     <div class="row">
       <div class="col s12 m4">
         <div class="icon-block">
+          <a href="https://www.linkedin.com/in/sarahbmcl/">
           <h2 class="center"><img src="public/assets/images/contact3.png"></img></h2>
-          <h5 class="center" style="color: #595959"><a href="https://www.linkedin.com/in/sarahbmcl/">LinkedIn</a></h5>
+          <h5 class="center" style="color: #595959">LinkedIn</a></h5>
           <!-- <p class="light">empty</p> -->
         </div>
       </div>
 
       <div class="col s12 m4">
         <div class="icon-block">
+              <a href="https://www.github.com/sarahbmcl/">
               <h2 class="center"><img src="public/assets/images/contact2.png"></img></h2>
-              <h5 class="center" style="color: #595959"><a href="https://www.github.com/sarahbmcl/">GitHub</a></h5>
+              <h5 class="center" style="color: #595959">GitHub</a></h5>
               <!-- <p class="light">empty</p> -->
         </div>
       </div>
 
       <div class="col s12 m4">
         <div class="icon-block">
+              <a href="mailto:sarahbmcl@gmail.com">
               <h2 class="center"><img src="public/assets/images/contact1.png"></img></h2>
-              <h5 class="center" style="color: #595959"><a href="mailto:sarahbmcl@gmail.com">Direct Contact</a></h5>
+              <h5 class="center" style="color: #595959">E-Mail</a></h5>
           <!-- <p class="light">empty</p> -->
         </div>
       </div>
@@ -115,13 +88,7 @@
   <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
   <script src="js/materialize.js"></script>
   <script src="js/init.js"></script>
-  <script language="JavaScript">
-      var frmvalidator  = new Validator("contactform");
-      frmvalidator.addValidation("name","req","Please provide your name");
-      frmvalidator.addValidation("email","req","Please provide your email");
-      frmvalidator.addValidation("email","email",
-      "Please enter a valid email address");
-  </script>
+
 
   </body>
 </html>
